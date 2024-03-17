@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <header class="primary-header flex">
+        <div class="logo">
+            <img src="./logo.png" alt="Site_Logo">
+        </div>
+
+        <button 
+        class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+        </button>
+
+    <nav>
+        <ul id="primary-navigation"
+        data-visible="false" 
+        class="primary-navigation flex">
+            <li class="active">
+             <a href="Index.html">
+               Home
+             </a> 
+             </li>  
+            <li>
+            <a href="elements.html">
+                Elements
+            </a>  
+            </li> 
+            <li>
+            <a href="challenges.html">
+            Challenges
+            </a>
+            </li>   
+            <li>
+            <a href="community.html">
+            Community
+            </a>
+            </li>   
+        </ul>
+    </nav>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="hero-text">
+                <h1>
+                    Free and Open Source 
+                    <br> Web-Dev Resources
+                </h1>
+                <p>Discover free and open-source web development resources! 
+                    <br>
+                From frameworks to tutorials, unleash your creativity</p>    
+                <form action="https://www.google.com/search" method="get" class="search-bar">
+                    <label for="search"></label>
+                    <input type="search" id="search" name="search" placeholder="Search for anything...">
+                    <button class="search-btn" type="submit"><img src="search_icon.png"></button>
+                </form>              
+            </div>
+            <img src="Hero Image.png" alt="">
+        </div>
+    </main>
+
+    
+
+</header>
+</body>
+</html>
